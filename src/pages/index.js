@@ -7,7 +7,7 @@ import Header from "../components/Header";
 import Image from 'next/image'
 
 function Blog({ posts }) {
-  console.log(posts)
+
   return (
     <>
       <Header />
