@@ -40,7 +40,7 @@ const Hero = () => {
     }
   };
   return (
-    <div className="bg-gradient-to-r from-amber-400 to-yellow-200 container mx-auto h-screen flex flex-col md:flex-row justify-between items-center ">
+    <div className=" container mx-auto h-screen flex flex-col md:flex-row justify-between items-center ">
       <div className="flex flex-col gap-5 md:gap-0 lg:gap-5">
         <p className="text-lg font-medium bg-amber-100 text-yellow-700 uppercase px-3 flex justify-center rounded-3xl py-2 w-48">
           TOp 10 Themes
@@ -62,7 +62,7 @@ const Hero = () => {
               onChange={handleInputChange}
               className="border border-gray-200 rounded-xl focus:outline-none focus:shadow-xl shadow-sm px-4"
             />
-            <button className="px-6 py-3 bg-gradient-to-r from-amber-300 to-yellow-400 rounded-2xl hover:scale-95 duration-300 transition text-black-800 shadow-xl font-medium">
+            <button className="px-6 py-3 rounded-2xl hover:scale-95 duration-300 transition text-black-800 bg-yellow-500 hover:bg-yellow-900 shadow-xl font-medium">
               Subscribe{" "}
             </button>
           </div>

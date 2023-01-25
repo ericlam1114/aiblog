@@ -24,7 +24,7 @@ function Header() {
       </Head>
    
 
-      <nav className="flex items-center justify-between bg-blue-600 p-4">
+      <nav className="flex items-center justify-between bg-black p-4">
         <div>
             <img src='/logo.png' alt='logo' className="h-8" />
         </div>

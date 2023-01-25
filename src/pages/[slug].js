@@ -6,6 +6,7 @@ import ReactMarkdown from "react-markdown";
 import Header from "../components/Header";
 import Image from 'next/image';
 
+
 export async function getStaticProps({ params }) {
   const { slug } = params;
   const filePath = path.join(process.cwd(), "posts", `${slug}.md`);
@@ -45,13 +46,13 @@ const BlogPost = ({ post }) => {
     
     <>
       <Header />
-      <div className="max-w-4xl mx-auto px-6 py-8 bg-gray-100 rounded-lg shadow-lg mb-8">
+      <div className="max-w-4xl mx-auto px-6 py-8 bg-gray-100 rounded-lg shadow-lg mb-8 mt-4">
         <h1 className="text-3xl font-bold text-gray-800 mb-4">
           {post.data.title}
         </h1>
         <div className="relative rounded-lg overflow-hidden">
           <Image
-            // src={"../../public/images/" + slug + ".png"}
+            src={"/../public/images/" + slug + ".png"}
             alt={post.title}
             className="w-full rounded-lg object-cover"
             width={800}
