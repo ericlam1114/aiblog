@@ -69,7 +69,7 @@ const Hero = () => {
           </div>
         </form>
         <div className="flex gap-5">
-          <a href="https://twitter.com/ericlamcrypto" target="_blank">
+          <a href="https://twitter.com/ericlamcrypto" target="_blank" rel="noreferrer">
             {" "}
             <BsTwitter className="text-4xl rounded-xl text-yellow-700 bg-amber-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer" />
           </a>
