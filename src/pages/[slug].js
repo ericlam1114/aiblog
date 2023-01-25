@@ -37,7 +37,7 @@ const BlogPost = ({ post }) => {
     return <div>Loading...</div>;
   }
 
-  return <ReactMarkdown children={post.content} />;
+  return <ReactMarkdown>{post.content}</ReactMarkdown>;
 };
 
 export default BlogPost;
