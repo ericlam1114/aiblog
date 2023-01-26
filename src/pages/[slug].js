@@ -52,12 +52,12 @@ const BlogPost = ({ post }) => {
         <p className="text-gray-700 mb-4">{post.data.date}</p>
         <p className="text-gray-700 mb-4">{post.data.author}</p>
         <div className="relative rounded-lg overflow-hidden">
-          <Image
+          <img
             src={"/images/" + slug + ".png"}
             alt={post.title}
             className="w-full rounded-lg object-cover"
-            width={800}
-            height={500}
+            // width={800}
+            // height={500}
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <i className="fas fa-search text-violet-400 text-5xl"></i>
