@@ -4,15 +4,13 @@ import fs from "fs";
 import path from "path";
 import ReactMarkdown from "react-markdown";
 import Header from "../components/Header";
-import Image from 'next/image';
-
+import Image from "next/image";
 
 export async function getStaticProps({ params }) {
   const { slug } = params;
   const filePath = path.join(process.cwd(), "posts", `${slug}.md`);
   const fileContent = fs.readFileSync(filePath, "utf8");
   const data = matter(fileContent);
-
 
   return {
     props: {
@@ -36,20 +34,22 @@ export async function getStaticPaths() {
 
 const BlogPost = ({ post }) => {
   const router = useRouter();
-  const {slug} = router.query;
+  const { slug } = router.query;
 
   if (router.isFallback) {
     return <div>Loading...</div>;
   }
 
   return (
-    
     <>
       <Header />
       <div className="max-w-4xl mx-auto px-6 py-8 bg-gray-100 rounded-lg shadow-lg mb-8 mt-4">
+        <p className="text-gray-200">Home / {slug} </p>
         <h1 className="text-3xl font-bold text-gray-800 mb-4">
           {post.data.title}
         </h1>
+        <p className="text-gray-700 mb-4">{post.data.date}</p>
+        <p className="text-gray-700 mb-4">{post.data.author}</p>
         <div className="relative rounded-lg overflow-hidden">
           <Image
             src={"/../public/images/" + slug + ".png"}
@@ -62,7 +62,6 @@ const BlogPost = ({ post }) => {
             <i className="fas fa-search text-violet-400 text-5xl"></i>
           </div>
         </div>
-        <p className="text-gray-700 mb-4">{post.data.date}</p>
         <div className="prose prose-lg">
           <ReactMarkdown>{post.content}</ReactMarkdown>
         </div>
