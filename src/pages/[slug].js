@@ -53,7 +53,7 @@ const BlogPost = ({ post }) => {
         <p className="text-gray-700 mb-4">{post.data.author}</p>
         <div className="relative rounded-lg overflow-hidden">
           <Image
-            src={"/images/" + slug + ".png"}
+            src={"/images/"+slug+".png"}
             alt={post.title}
             className="w-full rounded-lg object-cover"
             width={800}

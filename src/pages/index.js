@@ -21,7 +21,7 @@ function Blog({ posts }) {
                 <p className="mb-2 text-gray-700">{post.date}</p>
                 <Image
                   src={
-                    "/images/" + `${post.slug.toLowerCase()}` + ".png"
+                    "/images/" + `${post.slug}` + ".png"
                   }
                   alt={post.title}
                   className="w-full h-48 rounded-lg object-scale-down"
