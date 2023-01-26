@@ -56,7 +56,7 @@ function Newsletter() {
       onChange={handleInputChange}
       className="border border-gray-200 rounded-xl focus:outline-none focus:shadow-xl shadow-sm px-4"
     />
-    <button className="px-6 py-3 rounded-2xl hover:scale-95 duration-300 transition text-black-800 bg-yellow-500 hover:bg-yellow-900 shadow-xl font-medium">
+    <button className="px-6 py-3 rounded-2xl hover:scale-95 duration-300 transition text-white bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:bg-gradient-to-br focus:ring-4 shadow-xl font-medium">
       Subscribe{" "}
     </button>
   </div>
