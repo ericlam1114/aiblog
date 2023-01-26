@@ -44,7 +44,7 @@ const BlogPost = ({ post }) => {
     <>
       <Header />
       <div className="max-w-4xl mx-auto px-6 py-8 bg-gray-100 rounded-lg shadow-lg mb-8 mt-4">
-        <p className="text-gray-200">Home / {slug} </p>
+        <p className="text-gray-200"><a href="/" className="text-gray-200">Home</a> / {slug} </p>
         <h1 className="text-3xl font-bold text-gray-800 mb-4">
           {post.data.title}
         </h1>
@@ -52,7 +52,7 @@ const BlogPost = ({ post }) => {
         <p className="text-gray-700 mb-4">{post.data.author}</p>
         <div className="relative rounded-lg overflow-hidden">
           <Image
-            src={"/../public/images/" + slug + ".png"}
+            src={"/images/" + slug + ".png"}
             alt={post.title}
             className="w-full rounded-lg object-cover"
             width={800}
