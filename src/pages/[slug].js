@@ -5,6 +5,7 @@ import path from "path";
 import ReactMarkdown from "react-markdown";
 import Header from "../components/Header";
 import Image from "next/image";
+import Link from "next/link";
 
 export async function getStaticProps({ params }) {
   const { slug } = params;
@@ -44,7 +45,7 @@ const BlogPost = ({ post }) => {
     <>
       <Header />
       <div className="max-w-4xl mx-auto px-6 py-8 bg-gray-100 rounded-lg shadow-lg mb-8 mt-4">
-        <p className="text-gray-200"><a href="/" className="text-gray-200">Home</a> / {slug} </p>
+        <p className="text-gray-200"><Link href="/" className="text-gray-200">Home</Link> / {slug} </p>
         <h1 className="text-3xl font-bold text-gray-800 mb-4">
           {post.data.title}
         </h1>
