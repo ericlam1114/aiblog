@@ -62,14 +62,14 @@ function Header() {
       </Head>
    
 
-      <nav className="flex items-center justify-between p-4">
+      <nav className="flex items-center justify-center p-4 md:justify-between">
         <Link legacyBehavior href="/">
         <div className="cursor-pointer">
             <Image src='/logo.png' alt='logo' className="h-100" width={100} height={100}/>
         </div>
         </Link>
            
-        <form onSubmit={handleSubmit}>
+        {/* <form onSubmit={handleSubmit} >
           <div className="flex gap-5">
             <input
               placeholder="Enter your email..."
@@ -82,7 +82,7 @@ function Header() {
               Subscribe{" "}
             </button>
           </div>
-        </form>
+        </form> */}
       </nav>
     </div>
   );

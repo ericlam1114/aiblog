@@ -6,6 +6,7 @@ import ReactMarkdown from "react-markdown";
 import Header from "../components/Header";
 import Image from "next/image";
 import Link from "next/link";
+import Newsletter from '../components/Newsletter'
 
 export async function getStaticProps({ params }) {
   const { slug } = params;
@@ -67,6 +68,7 @@ const BlogPost = ({ post }) => {
           <ReactMarkdown>{post.content}</ReactMarkdown>
         </div>
       </div>
+      <Newsletter />
     </>
   );
 };
