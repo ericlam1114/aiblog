@@ -9,6 +9,7 @@ import axios from "axios";
 
 
 
+
 function Header() {
     const [formData, setFormData] = useState({});
   const [email, setEmail] = useState("");
@@ -60,7 +61,8 @@ function Header() {
           content="https://i.postimg.cc/RVmKrK2y/metapreview.jpg"
         />
       </Head>
-   
+
+
 
       <nav className="flex items-center justify-center p-4 md:justify-between">
         <Link legacyBehavior href="/">
