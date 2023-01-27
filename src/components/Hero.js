@@ -43,13 +43,13 @@ const Hero = () => {
   return (
     <div className=" container mx-auto h-screen flex flex-col md:flex-row md:-mt-20 justify-between items-center  ">
       <div className="flex flex-col gap-5 md:gap-0 lg:gap-5">
-        <p className="text-lg font-medium bg-amber-100 text-yellow-700 uppercase px-3 flex justify-center rounded-3xl py-2 w-48">
+        <p className="text-lg font-medium bg-yellow-100 text-gray-700 uppercase px-3 flex justify-center rounded-3xl py-2 w-48">
           TOp 10 Themes
         </p>
-        <p className="text-5xl md:lg:text-6xl font-bold">
+        <h1 className="text-5xl md:lg:text-6xl font-bold">
         Themes That <br/>Elevate Brands{" "}
-        </p>
-        <p className="text-base">
+        </h1>
+        <p className="text-base text-gray-800">
           Join over 100 subscribers getting top <strong>site themes</strong> for
           personal <strong>brands</strong> straight to their inbox once a week.<br />
           
@@ -63,7 +63,7 @@ const Hero = () => {
               onChange={handleInputChange}
               className="border border-gray-200 rounded-xl focus:outline-none focus:shadow-xl shadow-sm px-4"
             />
-            <button className="px-6 py-3 rounded-2xl hover:scale-95 duration-300 transition text-black-800 bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 hover:bg-gradient-to-br focus:ring-4 shadow-xl font-medium">
+            <button className="px-6 py-3 rounded-2xl hover:scale-95 duration-300 transition text-black-800 bg-gradient-to-r from-yellow-400  to-yellow-500 hover:bg-gradient-to-br focus:ring-4 shadow-xl font-medium">
               Subscribe{" "}
             </button>
           </div>
@@ -71,7 +71,7 @@ const Hero = () => {
         <div className="flex gap-5">
           <a href="https://twitter.com/ericlamcrypto" target="_blank" rel="noreferrer">
             {" "}
-            <BsTwitter className="text-4xl rounded-xl text-yellow-700 bg-amber-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer" />
+            <BsTwitter className="text-4xl rounded-xl text-yellow-500 bg-yellow-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer" />
           </a>
           {/* <RiInstagramFill className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer"/> */}
           {/* <BsYoutube className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer"/> */}

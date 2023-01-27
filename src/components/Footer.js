@@ -11,7 +11,7 @@ const Footer = () => (
         
       </div>
       <div className="w-full md:w-1/3 text-center md:text-center">
-        <a href="mailto:info@example.com" className="text-gray-800 hover:text-yellow-200">eric@themegoliath.com</a>
+        <a href="mailto:info@example.com" className="text-gray-800 hover:text-yellow-200">mark@themegoliath.com</a>
         <div className="text-gray-800">7611 Ben Ave</div>
         <div className="text-gray-800">North Hollywood, CA 91605</div>
       </div>
