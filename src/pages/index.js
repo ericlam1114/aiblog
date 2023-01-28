@@ -16,7 +16,7 @@ function Blog({ posts }) {
         {posts.map((post) => (
           <li key={post.slug} className="sm:w-full mt-40 md:w-1/3 md:mt-0 lg:w-1/4 text-white mb-8">
             <Link href="/[slug]" as={`/${post.slug}`}>
-              <div className="bg-yellow-100 rounded-lg shadow-lg p-4 hover:scale-95 duration-300 transition ">
+              <div className="bg-yellow-400 rounded-lg shadow-lg p-4 hover:scale-95 duration-300 transition ">
                 <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
                 <p className="mb-2 text-gray-700">{post.date}</p>
                 <Image
