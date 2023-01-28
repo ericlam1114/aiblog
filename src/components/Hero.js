@@ -5,6 +5,8 @@ import { RiInstagramFill } from "react-icons/ri";
 import axios from "axios";
 import Image from "next/image";
 
+const spreadsheetId = 'https://sheet.best/api/sheets/d72fe0c5-266c-42ae-90d2-a70757956234';
+
 
 const Hero = () => {
   const [formData, setFormData] = useState({});
@@ -18,7 +20,7 @@ const Hero = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     try {
-      console.log(formData);
+      // console.log(formData);
       // appendSpreadsheet(formData)
       // setEmail('');
       // console.log(email);
@@ -27,9 +29,8 @@ const Hero = () => {
         Email: email,
       };
 
-      axios
-        .post(
-          "https://sheet.best/api/sheets/d72fe0c5-266c-42ae-90d2-a70757956234",
+      axios.post(
+        spreadsheetId,
           data
         )
         .then((response) => console.log(response));
